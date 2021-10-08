@@ -1,0 +1,37 @@
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: 400px;
+    width: 420px;
+}
+
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color:#1e90ff;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text p{
+    color: #808080;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: justify;
+}

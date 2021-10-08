@@ -1,7 +1,7 @@
 import React,{useState,useEffect}from "react"
 import '../css/App.css';
 import app from "../firebase"
-import Login from "../components/Navbar/Login";
+import Login from "../components/Login";
 import Swal from "sweetalert2";
 
 
