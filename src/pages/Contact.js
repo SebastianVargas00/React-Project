@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {Component}from 'react'
 import { Form, Button, Col, Row} from 'react-bootstrap';
 import '../css/App.css';
+import Swal from 'sweetalert2';
 
-const Contact= () => {
+const Contact = () => {
+
     return (
     <>
       <div className = "Container_Contact">
         <Form className = "Contact_Form">
-
         <Form.Group className="mb-3" controlId="FormCompany">
             <Form.Label>Nombres</Form.Label>
             <Form.Control type="text" required></Form.Control>

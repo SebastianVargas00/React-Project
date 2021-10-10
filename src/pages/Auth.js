@@ -3,6 +3,7 @@ import '../css/App.css';
 import app from "../firebase"
 import Login from "../components/Login";
 import Swal from "sweetalert2";
+import { useHistory } from 'react-router';
 
 
 
@@ -13,6 +14,12 @@ function Auth() {
   const[emailerror,setEmailerror]=useState("")
   const[passworderror,setPassworderror]=useState("")
   const[hasaccount,setHasaccount]=useState(false)
+  
+  function redirect(){
+    let history=useHistory();
+    history.push("/")
+    notify()
+  }
   
   
   function notify(){
@@ -93,7 +100,7 @@ function Auth() {
        //<Navbar user={user}/>
       //alert("Bienvenido usuario")
       //notify()
-      notify()
+      redirect()
     ):(
       <Login email={email} setEmail={setEmail} password={password} setPassword={setPassword} handlelogin={handlelogin}  handlesignup={handlesignup} hasaccount={hasaccount} setHasaccount={setHasaccount} emailerror={emailerror} passworderror={passworderror}/>
     )}

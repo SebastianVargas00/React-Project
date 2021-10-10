@@ -1,7 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import{Nav,NavLink,Bars,NavMenu,NavBtnLink} from'../css/Elements';
 import app from '../firebase';
-import bussiness from '../images/businness.svg';
+import briefcase from '../images/briefcase.svg';
+import { useHistory } from 'react-router';
 
 
 
@@ -26,12 +27,18 @@ const Navbar = () => {
          authListener();
       
         },[])
+
+        function redirect(){
+          let history=useHistory()
+          history.push("/")
+        }
+
       
     return (
         <>
         <Nav>
             <NavLink to="/">
-              <h1>Inicio</h1>
+            <img src={briefcase} alt="" width="45" height="45"/> <h2>Job Bag</h2>
             </NavLink>
             <Bars/>
             <NavMenu>
