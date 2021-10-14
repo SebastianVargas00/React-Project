@@ -2,6 +2,8 @@ import React, {Component}from 'react'
 import { Form, Button, Col, Row} from 'react-bootstrap';
 import '../css/App.css';
 import Swal from 'sweetalert2';
+import airplane from "../images/airplane.svg"
+
 
 const Contact = () => {
 
@@ -9,7 +11,8 @@ const Contact = () => {
     <>
       <div className = "Container_Contact">
         <Form className = "Contact_Form">
-        <Form.Group className="mb-3" controlId="FormCompany">
+          <img src={airplane} alt="" width="50px" height="50px"/> <span className="span-text">Contactanos</span>
+        <Form.Group className="mb-3 pt-3" controlId="FormCompany">
             <Form.Label>Nombres</Form.Label>
             <Form.Control type="text" required></Form.Control>
           </Form.Group>
@@ -26,14 +29,13 @@ const Contact = () => {
 
           <Form.Group className="mb-3" controlId="FormCompany">
             <Form.Label>Compañia</Form.Label>
-            <Form.Control type="text"></Form.Control>
+            <Form.Control type="text" required></Form.Control>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="FormCompany">
             <Form.Label>Tema del problema (Opcional)</Form.Label>
             <Form.Control type="text"></Form.Control>
           </Form.Group>
-
 
           <Form.Group className="mb-3" controlId="formDescription">
             <Form.Label>Descripcion</Form.Label>

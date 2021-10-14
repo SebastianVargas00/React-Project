@@ -38,7 +38,7 @@ const Navbar = () => {
         <>
         <Nav>
             <NavLink to="/">
-            <img src={briefcase} alt="" width="45" height="45"/> <h2>Job Bag</h2>
+            <h2>Job Bag</h2>
             </NavLink>
             <Bars/>
             <NavMenu>
